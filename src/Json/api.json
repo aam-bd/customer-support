@@ -1,0 +1,137 @@
+[
+  {
+    "id": "1001",
+    "title": "Unable to login to account",
+    "description": "Customer reports receiving 'invalid credentials' error even after password reset. Account seems locked after multiple attempts.",
+    "customer": "John Smith",
+    "priority": "high",
+    "status": "open",
+    "createdAt": "03/03/2026"
+  },
+  {
+    "id": "1002",
+    "title": "Payment deducted but order failed",
+    "description": "User attempted to purchase premium subscription. Amount deducted from bank but order shows as failed on platform.",
+    "customer": "Emily Davis",
+    "priority": "high",
+    "status": "open",
+    "createdAt": "03/03/2026"
+  },
+  {
+    "id": "1003",
+    "title": "App crashes on startup",
+    "description": "Application crashes immediately after splash screen on Android device. User has cleared cache but issue persists.",
+    "customer": "Michael Brown",
+    "priority": "medium",
+    "status": "open",
+    "createdAt": "04/03/2026"
+  },
+  {
+    "id": "1004",
+    "title": "Request refund for duplicate charge",
+    "description": "Customer was charged twice for the same order. Requests immediate refund for the duplicate transaction.",
+    "customer": "Sarah Wilson",
+    "priority": "medium",
+    "status": "open",
+    "createdAt": "02/03/2026"
+  },
+  {
+    "id": "1005",
+    "title": "Cannot reset password",
+    "description": "User not receiving password reset email. Checked spam folder. Needs manual reset or alternative verification method.",
+    "customer": "David Lee",
+    "priority": "low",
+    "status": "open",
+    "createdAt": "05/03/2026"
+  },
+  {
+    "id": "1006",
+    "title": "Two-factor authentication not working",
+    "description": "User not receiving SMS with 2FA code. Unable to complete login process. Has verified phone number is correct.",
+    "customer": "Jessica Taylor",
+    "priority": "high",
+    "status": "open",
+    "createdAt": "03/03/2026"
+  },
+  {
+    "id": "1007",
+    "title": "Order status not updating",
+    "description": "Order placed three days ago still shows 'processing'. Customer concerned about delivery delay.",
+    "customer": "Robert Johnson",
+    "priority": "low",
+    "status": "open",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": "1008",
+    "title": "Error when uploading profile picture",
+    "description": "User gets 'file format not supported' error when uploading JPG image. File size is within limits.",
+    "customer": "Amanda Garcia",
+    "priority": "medium",
+    "status": "open",
+    "createdAt": "04/03/2026"
+  },
+  {
+    "id": "1009",
+    "title": "Mobile app slow performance",
+    "description": "App takes 30+ seconds to load any page. User on latest version with good internet connection.",
+    "customer": "Thomas Martinez",
+    "priority": "low",
+    "status": "open",
+    "createdAt": "05/03/2026"
+  },
+  {
+    "id": "1010",
+    "title": "Invoice not generated for order",
+    "description": "Customer completed payment but invoice is not available in downloads section. Needs invoice for reimbursement.",
+    "customer": "Jennifer White",
+    "priority": "medium",
+    "status": "open",
+    "createdAt": "04/03/2026"
+  },
+  {
+    "id": "1011",
+    "title": "Cannot apply promo code",
+    "description": "Promo code WELCOME20 shows as invalid despite being unused and within validity period.",
+    "customer": "Christopher Clark",
+    "priority": "low",
+    "status": "open",
+    "createdAt": "05/03/2026"
+  },
+  {
+    "id": "1012",
+    "title": "Session timeout too aggressive",
+    "description": "User gets logged out after only 2 minutes of inactivity. Needs longer session duration.",
+    "customer": "Patricia Rodriguez",
+    "priority": "medium",
+    "status": "open",
+    "createdAt": "02/03/2026"
+  },
+  {
+    "id": "1013",
+    "title": "Search functionality broken",
+    "description": "Search returns no results for products that are clearly available when browsing manually.",
+    "customer": "James Lewis",
+    "priority": "high",
+    "status": "open",
+    "createdAt": "03/03/2026"
+  },
+  {
+    "id": "1014",
+    "title": "Email notifications not received",
+    "description": "User not receiving any order confirmation or shipping updates. Has checked spam folders.",
+    "customer": "Lisa Walker",
+    "priority": "medium",
+    "status": "open",
+    "createdAt": "04/03/2026"
+  },
+  {
+    "id": "1015",
+    "title": "Gift card balance missing",
+    "description": "User added $50 gift card but balance shows $0. Receipt shows successful activation.",
+    "customer": "Daniel Hall",
+    "priority": "high",
+    "status": "open",
+    "createdAt": "05/03/2026"
+  }
+]

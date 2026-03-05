@@ -7,9 +7,9 @@ const Banner = ({
     return (
         <div className="w-full bg-linear-to-r from-purple-50 to-white py-8 sm:py-12 lg:py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
-                {/* Stats Cards Container */}
+                {/* Cards Container */}
                 <div className="flex flex-col md:flex-row items-stretch justify-center gap-3 lg:gap-5">
-                    {/* In Progress Card */}
+                    {/* In-Progress */}
                     <div className="group relative flex-1 min-w-70 overflow-hidden rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300">
                         <div className="absolute inset-0 bg-linear-to-br from-[#632EE3] to-[#9F62F2]">
                             <div 
@@ -45,7 +45,7 @@ const Banner = ({
                         </div>
                     </div>
 
-                    {/* Resolved Card */}
+                    {/* Resolved */}
                     <div className="group relative flex-1 min-w-70 overflow-hidden rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300">
                         <div className="absolute inset-0 bg-linear-to-r from-[#54CF68] to-[#00827A]">
                             <div 

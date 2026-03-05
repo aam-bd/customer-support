@@ -1,11 +1,18 @@
 import { Link } from 'react-router';
+import { useState } from 'react';
 
 const Navbar = () => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
     return (
         <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="flex items-center justify-between h-16 sm:h-20">
-                    {/* Logo/Title */}
+                    {/* CS -- Ticket System */}
                     <div className="shrink-0">
                         <Link to="/" className="text-xl sm:text-2xl font-bold text-gray-800 hover:text-gray-600 transition-colors duration-300">
                             CS<span className="text-gray-400"> -- </span>Ticket System
@@ -46,37 +53,67 @@ const Navbar = () => {
                             <span>New Ticket</span>
                         </button>
 
-                        {/* Mobile Menu Button */}
                         <div className="md:hidden flex items-center">
-                            <button className="p-2 rounded-lg text-gray-600 hover:text-gray-900 cursor-pointer hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#632EE3] transition-all duration-200">
+                            <button 
+                                onClick={toggleMobileMenu}
+                                className="p-2 rounded-lg text-gray-600 hover:text-gray-900 cursor-pointer hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#632EE3] transition-all duration-200"
+                                aria-label="Toggle mobile menu"
+                                aria-expanded={isMobileMenuOpen}
+                            >
                                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                    {isMobileMenuOpen ? (
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                    ) : (
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                    )}
                                 </svg>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            {/* Mobile Menu Dropdown */}
-            <div className="md:hidden hidden">
+            <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
                 <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
-                    <Link to="/" className="block px-3 py-2 text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200">
+                    <Link 
+                        to="/" 
+                        className="block px-3 py-2 text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
                         Home
                     </Link>
-                    <Link to="/faq" className="block px-3 py-2 text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200">
-                        Faq
+                    <Link 
+                        to="/faq" 
+                        className="block px-3 py-2 text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                        FAQ
                     </Link>
-                    <Link to="/changelog" className="block px-3 py-2 text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200">
+                    <Link 
+                        to="/changelog" 
+                        className="block px-3 py-2 text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
                         Changelog
                     </Link>
-                    <Link to="/blog" className="block px-3 py-2 text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200">
+                    <Link 
+                        to="/blog" 
+                        className="block px-3 py-2 text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
                         Blog
                     </Link>
-                    <Link to="/download" className="block px-3 py-2 text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200">
+                    <Link 
+                        to="/download" 
+                        className="block px-3 py-2 text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
                         Download
                     </Link>
-                    <Link to="/contact" className="block px-3 py-2 text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200">
+                    <Link 
+                        to="/contact" 
+                        className="block px-3 py-2 text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
                         Contact
                     </Link>
                 </div>

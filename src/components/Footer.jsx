@@ -3,12 +3,10 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className="bg-black text-white">
-            {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-4 lg:px-4 pt-12 lg:pt-16 lg:pb-4">
-                {/* 5 Column Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6">
                     
-                    {/* Column 1 - Company Info */}
+                    {/* Column 1 */}
                     <div className="lg:col-span-1 pr-4">
                         <h3 className="text-lg font-semibold mb-4 text-white/90">CS — Ticket System</h3>
                         <p className="text-sm text-white/60 leading-relaxed text-justify">
@@ -16,7 +14,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    {/* Column 2 - Company Links */}
+                    {/* Column 2 */}
                     <div className="lg:col-span-1">
                         <h4 className="text-sm font-semibold uppercase tracking-wider mb-4 text-white/80">Company</h4>
                         <ul className="space-y-3">
@@ -43,7 +41,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Column 3 - Services Links */}
+                    {/* Column 3 */}
                     <div className="lg:col-span-1">
                         <h4 className="text-sm font-semibold uppercase tracking-wider mb-4 text-white/80">Services</h4>
                         <ul className="space-y-3">
@@ -65,7 +63,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Column 4 - Information Links */}
+                    {/* Column 4 */}
                     <div className="lg:col-span-1">
                         <h4 className="text-sm font-semibold uppercase tracking-wider mb-4 text-white/80">Information</h4>
                         <ul className="space-y-3">
@@ -82,7 +80,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Column 5 - Social Links & Contact */}
+                    {/* Column 5 */}
                     <div className="lg:col-span-1">
                         <h4 className="text-sm font-semibold uppercase tracking-wider mb-4 text-white/80">Social Links</h4>
                         <ul className="space-y-3">
@@ -116,9 +114,8 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Bottom Border */}
                 <div className="border-t border-white/10 mt-5 lg:mt-8 pt-4">
-                    {/* Copyright - Centered */}
+                    {/* Copyright  */}
                     <p className="text-sm text-white/60 text-center">
                         © 2025 CS — Ticket System. All rights reserved.
                     </p>

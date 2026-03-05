@@ -68,7 +68,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FDFAFF' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F5F5F5' }}>
       <Navbar/>
       <Banner 
         inProgressCount={inProgressTickets.length} 

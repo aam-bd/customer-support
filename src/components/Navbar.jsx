@@ -18,7 +18,7 @@ const Navbar = () => {
                                 Home
                             </Link>
                             <Link to="/faq" className="px-3 py-2 text-sm lg:text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200">
-                                Faq
+                                FAQ
                             </Link>
                             <Link to="/changelog" className="px-3 py-2 text-sm lg:text-base text-gray-600 hover:text-gray-900 font-medium rounded-md hover:bg-gray-50 transition-all duration-200">
                                 Changelog

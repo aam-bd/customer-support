@@ -2,7 +2,7 @@ import React from 'react';
 
 const TaskStatus = ({ inProgressTickets, resolvedTickets, onComplete }) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
+    <div className="bg-white rounded-xl shadow-lg lg:mt-13 p-8 sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
       {/* In Progress Section */}
       <div className="mb-8">
         <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">

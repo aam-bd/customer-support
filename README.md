@@ -1,16 +1,56 @@
-# React + Vite
+#What is JSX, and why is it used?
+JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows to write HTML-like code in React components. For example:
+const element = <h1>Hello, World!</h1>;
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#What is the difference between State and Props?
+Props are read-only and passed from parent to child components.
+State is mutable and manageable within the component.
 
-Currently, two official plugins are available:
+Example:
+// Props (passed from parent)
+<Child name="John" />
+// State (managed inside component)
+const [count, setCount] = useState(0);
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#What is the useState hook, and how does it work?
+useState is a React hook that adds state to functional components. It returns an array with the current state value and a function to update it.
 
-## React Compiler
+Example:
+const [count, setCount] = useState(0);
+<button onClick={() => setCount(count + 1)}>
+  Clicked: {count}
+</button>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+#How can you share state between components in React?
 
-## Expanding the ESLint configuration
+State can be shared by lifting the state up to a common parent component.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Example:
+
+function Parent() {
+  const [data, setData] = useState('');
+  return (
+    <>
+      <ChildA data={data} />
+      <ChildB setData={setData} />
+    </>
+  );
+}
+
+#How is event handling done in React?
+
+Event handling in React uses camelCase syntax and passes a function as the event handler, not a string.
+
+Example:
+function Button() {
+  const handleClick = () => {
+    alert('Button clicked!');
+  };
+  
+  return (
+    <button onClick={handleClick}>
+      Click
+    </button>
+  );
+}
